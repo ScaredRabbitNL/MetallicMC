@@ -1,0 +1,14 @@
+{
+  "type": "metallicmc:metal_combining",
+  "ingredients": [
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "item": "metallicmc:scared_rabbitium_ingot"
+    }
+  ],
+  "output": {
+    "item": "metallicmc:cobalt_ingot"
+  }
+}

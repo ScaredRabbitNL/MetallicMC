@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_netherrack_scared_rabbitium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "metallicmc:netherrack_scared_rabbitium_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:scared_rabbitium_ingot_from_blasting_netherrack_scared_rabbitium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_netherrack_scared_rabbitium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:scared_rabbitium_ingot_from_blasting_netherrack_scared_rabbitium_ore"
+    ]
+  }
+}

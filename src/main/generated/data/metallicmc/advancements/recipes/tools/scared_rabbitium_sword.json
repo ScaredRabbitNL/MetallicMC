@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scared_rabbitium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "metallicmc:scared_rabbitium_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stick"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:scared_rabbitium_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stick",
+      "has_scared_rabbitium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:scared_rabbitium_sword"
+    ]
+  }
+}

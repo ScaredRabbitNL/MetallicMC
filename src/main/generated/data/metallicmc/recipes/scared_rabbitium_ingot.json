@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "metallicmc:scared_rabbitium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "metallicmc:scared_rabbitium_ingot"
+  }
+}

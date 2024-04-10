@@ -1,0 +1,29 @@
+{
+  "item.metallicmc.scared_rabbitium_ingot": "Scared Rabbitium Ingot",
+  "item.metallicmc.raw_scared_rabbitium": "Raw Scared Rabbitium",
+  "item.metallicmc.vanta_ingot": "Vanta (Black) Ingot",
+  "item.metallicmc.vanta_dust": "Vanta (Black) Dust",
+  "item.metallicmc.scared_rabbitium_pickaxe": "Scared Rabbitium Pickaxe",
+  "item.metallicmc.scared_rabbitium_sword": "Scared Rabbitium Sword",
+  "item.metallicmc.scared_rabbitium_axe": "Scared Rabbitium Axe",
+  "item.metallicmc.scared_rabbitium_shovel": "Scared Rabbitium Shove;",
+  "item.metallicmc.scared_rabbitium_hoe": "Scared Rabbitium Hoe",
+  "item.metallicmc.scared_rabbitium_helmet": "Scared Rabbitium Helmet",
+  "item.metallicmc.scared_rabbitium_chestplate": "Scared Rabbitium Chestplate",
+  "item.metallicmc.scared_rabbitium_leggings": "Scared Rabbitium Leggings",
+  "item.metallicmc.scared_rabbitium_boots": "Scared Rabbitium Boots",
+  "item.metallicmc.cobalt_ingot": "Cobalt Ingot",
+
+
+  "block.metallicmc.scared_rabbitium_block": "Block Of Scared Rabbitium",
+  "block.metallicmc.scared_rabbitium_ore": "Scared Rabbitium Ore",
+  "block.metallicmc.deepslate_scared_rabbitium_ore": "Deepslate Scared Rabbitium Ore",
+  "block.metallicmc.netherrack_scared_rabbitium_ore": "Netherrack Scared Rabbitium Ore",
+  "block.metallicmc.end_stone_scared_rabbitium_ore": "End Stone Scared Rabbitium Ore",
+  "block.metallicmc.metal_combiner": "Metal Combiner",
+
+  "itemgroup.metallicmc.blocks": "Scared's Blocks",
+  "itemgroup.metallicmc.items": "Scared's Items",
+
+  "metallicmc.gui.title.metal_combiner": "Metal Combiner"
+}

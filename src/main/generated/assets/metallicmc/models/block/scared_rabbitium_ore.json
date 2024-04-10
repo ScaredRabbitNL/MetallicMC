@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "metallicmc:block/scared_rabbitium_ore"
+  }
+}

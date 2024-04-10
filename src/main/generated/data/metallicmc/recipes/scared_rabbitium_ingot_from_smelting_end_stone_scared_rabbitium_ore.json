@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "scared_rabbitium",
+  "ingredient": {
+    "item": "metallicmc:end_stone_scared_rabbitium_ore"
+  },
+  "result": "metallicmc:scared_rabbitium_ingot"
+}
