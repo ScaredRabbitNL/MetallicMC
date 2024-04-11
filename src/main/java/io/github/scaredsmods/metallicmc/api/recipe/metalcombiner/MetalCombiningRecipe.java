@@ -3,6 +3,7 @@ package io.github.scaredsmods.metallicmc.api.recipe.metalcombiner;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import io.github.scaredsmods.metallicmc.MetallicMC;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
@@ -11,6 +12,7 @@ import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.registry.DynamicRegistryManager;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
@@ -20,6 +22,12 @@ import java.util.List;
 public class MetalCombiningRecipe implements Recipe<SimpleInventory> {
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
+
+    public static final Identifier EMI_id = new Identifier(MetallicMC.MOD_ID);
+    public static Identifier getEMI_id() {
+        return EMI_id;
+    }
+
 
     public MetalCombiningRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
         this.output = itemStack;
@@ -73,9 +81,7 @@ public class MetalCombiningRecipe implements Recipe<SimpleInventory> {
         public static final Type INSTANCE = new Type();
         public static final String ID = "metal_combining";
 
-        public static String getId() {
-            return ID;
-        }
+
     }
 
     public static class Serializer implements RecipeSerializer<MetalCombiningRecipe> {
