@@ -72,6 +72,10 @@ public class MetalCombiningRecipe implements Recipe<SimpleInventory> {
     public static class Type implements RecipeType<MetalCombiningRecipe> {
         public static final Type INSTANCE = new Type();
         public static final String ID = "metal_combining";
+
+        public static String getId() {
+            return ID;
+        }
     }
 
     public static class Serializer implements RecipeSerializer<MetalCombiningRecipe> {
