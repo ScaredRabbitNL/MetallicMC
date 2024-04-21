@@ -1,6 +1,6 @@
 package io.github.scaredsmods.metallicmc.init;
 
-import io.github.scaredsmods.metallicmc.item.cobalt.CobaltItems;
+import io.github.scaredsmods.metallicmc.content.cobalt.CobaltItems;
 
 public class ItemInit {
 

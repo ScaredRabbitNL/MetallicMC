@@ -8,6 +8,8 @@ import net.minecraft.util.Identifier;
 
 public class ModRecipes {
 
+
+
     public static void registerRecipes() {
         Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(MetallicMC.MOD_ID, MetalCombiningRecipe.Serializer.ID),
                 MetalCombiningRecipe.Serializer.INSTANCE);

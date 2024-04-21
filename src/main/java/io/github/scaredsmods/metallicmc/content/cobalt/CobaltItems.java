@@ -1,8 +1,7 @@
-package io.github.scaredsmods.metallicmc.item.cobalt;
+package io.github.scaredsmods.metallicmc.content.cobalt;
 
 import io.github.scaredsmods.metallicmc.MetallicMC;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -12,6 +11,10 @@ public class CobaltItems {
 
     public static final Item COBALT_INGOT = registerItem("cobalt_ingot",
             new Item(new FabricItemSettings()));
+
+    public static final Item RAW_COBALT = registerItem("raw_cobalt",
+            new Item(new FabricItemSettings()));
+
 
 
 

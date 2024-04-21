@@ -33,6 +33,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.SCARED_RABBITIUM_INGOT ,RecipeCategory.BUILDING_BLOCKS,
                 ModBlocks.SCARED_RABBITIUM_BLOCK);
 
+
+
         //Default Tools
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SCARED_RABBITIUM_PICKAXE, 1)
                 .pattern("III")
@@ -101,5 +103,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCARED_RABBITIUM_HOE)));
 
         */
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SCARED_RABBITIUM_HELMET, 1)
+                .pattern("III")
+                .pattern("I I")
+                .input('I', ModItems.SCARED_RABBITIUM_INGOT)
+                .criterion(hasItem(ModItems.SCARED_RABBITIUM_INGOT), conditionsFromItem(ModItems.SCARED_RABBITIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCARED_RABBITIUM_HELMET)));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SCARED_RABBITIUM_CHESTPLATE, 1)
+                .pattern("I I")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.SCARED_RABBITIUM_INGOT)
+                .criterion(hasItem(ModItems.SCARED_RABBITIUM_INGOT), conditionsFromItem(ModItems.SCARED_RABBITIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCARED_RABBITIUM_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SCARED_RABBITIUM_LEGGINGS,1)
+                .pattern("III")
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.SCARED_RABBITIUM_INGOT)
+                .criterion(hasItem(ModItems.SCARED_RABBITIUM_INGOT), conditionsFromItem(ModItems.SCARED_RABBITIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCARED_RABBITIUM_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SCARED_RABBITIUM_BOOTS, 1)
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.SCARED_RABBITIUM_INGOT)
+                .criterion(hasItem(ModItems.SCARED_RABBITIUM_INGOT), conditionsFromItem(ModItems.SCARED_RABBITIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCARED_RABBITIUM_BOOTS)));
     }
 }

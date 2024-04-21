@@ -36,5 +36,20 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/jEGF5fb"
+			},
+			"badges": [ "library", "deprecated" ],
+			"parent": {
+				"id": "mcci",
+				"name": "Metallic Integration",
+				"description": "Integration for the mod MetallicMC, with mods like REI, EMI etc.",
+				"badges": [ "library" ]
+			},
+			"update_checker": true
+		}
 	}
 }

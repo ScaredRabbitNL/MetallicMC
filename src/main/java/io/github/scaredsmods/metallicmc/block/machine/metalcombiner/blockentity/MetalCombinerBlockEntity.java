@@ -15,6 +15,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.listener.ClientPlayPacketListener;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -32,9 +35,9 @@ public class MetalCombinerBlockEntity extends BlockEntity implements ExtendedScr
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
 
 
-    private static final int INPUT_SLOT_1 = 0;
-    private static final int INPUT_SLOT_2 = 1;
-    private static final int OUTPUT_SLOT = 2;
+    public static final int INPUT_SLOT_1 = 0;
+    public static final int INPUT_SLOT_2 = 1;
+    public static final int OUTPUT_SLOT = 2;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -176,5 +179,34 @@ public class MetalCombinerBlockEntity extends BlockEntity implements ExtendedScr
 
     private boolean isOutputSlotEmptyOrReceiveable() {
         return this.getStack(OUTPUT_SLOT).isEmpty() || this.getStack(OUTPUT_SLOT).getCount() < this.getStack(OUTPUT_SLOT).getMaxCount();
+    }
+    public ItemStack getRenderStack(){
+        if (!this.getStack(OUTPUT_SLOT).isEmpty() ){
+            return this.getStack(OUTPUT_SLOT);
+        } else if (!this.getStack(INPUT_SLOT_1).isEmpty()){
+            return this.getStack(INPUT_SLOT_1);
+        } else if (!this.getStack(INPUT_SLOT_2).isEmpty()) {
+            return this.getStack(INPUT_SLOT_2);
+        }else {
+            return this.getStack(OUTPUT_SLOT);
+        }
+
+    }
+
+    @Override
+    public void markDirty() {
+        world.updateListeners(pos, getCachedState(), getCachedState(), 3);
+        super.markDirty();
+    }
+
+    @Nullable
+    @Override
+    public Packet<ClientPlayPacketListener> toUpdatePacket() {
+        return BlockEntityUpdateS2CPacket.create(this);
+    }
+
+    @Override
+    public NbtCompound toInitialChunkDataNbt() {
+        return createNbt();
     }
 }

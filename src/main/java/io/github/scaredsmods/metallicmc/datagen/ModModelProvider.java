@@ -1,10 +1,11 @@
 package io.github.scaredsmods.metallicmc.datagen;
 
+import io.github.scaredsmods.metallicmc.api.datagen.CobaltMethods;
 import io.github.scaredsmods.metallicmc.block.ModBlocks;
-import io.github.scaredsmods.metallicmc.block.machine.ModBlockEntities;
 import io.github.scaredsmods.metallicmc.block.machine.ModMachines;
+import io.github.scaredsmods.metallicmc.content.cobalt.CobaltBlocks;
 import io.github.scaredsmods.metallicmc.item.ModItems;
-import io.github.scaredsmods.metallicmc.item.cobalt.CobaltItems;
+import io.github.scaredsmods.metallicmc.content.cobalt.CobaltItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -25,8 +26,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHERRACK_SCARED_RABBITIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_SCARED_RABBITIUM_ORE);
 
+
+
         //blockStateModelGenerator.registerSimpleState(ModBlocks.INGOT_SEPARATOR);
         blockStateModelGenerator.registerSimpleState(ModMachines.METAL_COMBINER);
+
+        CobaltMethods.generateCobaltBlockStateModels(blockStateModelGenerator);
     }
 
     @Override
@@ -47,6 +52,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SCARED_RABBITIUM_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SCARED_RABBITIUM_BOOTS);
 
-        itemModelGenerator.register(CobaltItems.COBALT_INGOT, Models.GENERATED);
+        CobaltMethods.generateCobaltItemModels(itemModelGenerator);
+
     }
+
+
+
+
 }

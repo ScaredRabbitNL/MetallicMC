@@ -20,5 +20,6 @@ public class ModInit {
         ModBlockEntities.registerModBlockEntities();
         ModScreenHandlers.registerScreenHandlers();
         ModRecipes.registerRecipes();
+        BlockInit.registerMetalBlocks();
     }
 }

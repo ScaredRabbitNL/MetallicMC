@@ -13,17 +13,26 @@
   "item.metallicmc.scared_rabbitium_leggings": "Scared Rabbitium Leggings",
   "item.metallicmc.scared_rabbitium_boots": "Scared Rabbitium Boots",
   "item.metallicmc.cobalt_ingot": "Cobalt Ingot",
+  "item.metallicmc.raw_cobalt": "Raw Cobalt",
 
-
+  "block.metallicmc.cobalt_block": "Cobalt Block",
   "block.metallicmc.scared_rabbitium_block": "Block Of Scared Rabbitium",
   "block.metallicmc.scared_rabbitium_ore": "Scared Rabbitium Ore",
   "block.metallicmc.deepslate_scared_rabbitium_ore": "Deepslate Scared Rabbitium Ore",
   "block.metallicmc.netherrack_scared_rabbitium_ore": "Netherrack Scared Rabbitium Ore",
   "block.metallicmc.end_stone_scared_rabbitium_ore": "End Stone Scared Rabbitium Ore",
   "block.metallicmc.metal_combiner": "Metal Combiner",
+  "block.metallicmc.cobalt_ore": "Cobalt Ore",
+  "block.metallicmc.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
+  "block.metallicmc.nether_cobalt_ore": "Nether Cobalt",
+  "block.metallicmc.end_cobalt_ore": "End Cobalt Ore",
 
-  "itemgroup.metallicmc.blocks": "Scared's Blocks",
-  "itemgroup.metallicmc.items": "Scared's Items",
+  "itemgroup.metallicmc.blocks": "Metallic Blocks",
+  "itemgroup.metallicmc.items": "Metallic Items",
+  "itemgroup.metallicmc.machines": "Metallic Machines",
+  "itemgroup.metallicmc.ingots": "Metallic Ingots",
+  "itemgroup.metallicmc.dusts": "Metallic Dusts",
+  "itemgroup.metallicmc.raw_metals": "Raw Metals",
 
   "metallicmc.gui.title.metal_combiner": "Metal Combiner"
 }
